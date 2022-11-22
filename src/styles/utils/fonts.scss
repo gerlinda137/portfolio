@@ -1,1 +1,32 @@
 // Файл для подключения нестандартных шрифтов
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller/Muller-Light.woff2") format("woff2"),
+    url("../fonts/Muller/Muller-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller/Muller-Regular.woff2") format("woff2"),
+    url("../fonts/Muller/Muller-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller/Muller-Medium.woff2") format("woff2"),
+    url("../fonts/Muller/Muller-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Muller";
+  src: url("../fonts/Muller/Muller-Bold.woff2") format("woff2"),
+    url("../fonts/Muller/Muller-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
