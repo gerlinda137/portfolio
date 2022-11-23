@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 100%; //fs 16px по умолчанию
+}
+
+body {
+  margin: 0;
+  font-family: "Muller";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1;
+  background-color: var(--bg);
+  color: var(--txt);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Muller";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1235px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}

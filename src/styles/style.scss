@@ -1,7 +1,21 @@
-@import "common/global";
+@import "common/main-header";
 
-@import "common/header";
+@import "common/nav";
 
-@import "common/footer";
+@import "common/main-footer";
+
+@import "common/logo";
+
+@import "common/socials";
+
+@import "common/main";
+
+@import "common/top";
+
+@import "common/number";
 
 @import "utils/fonts";
+
+@import "utils/global";
+
+@import "utils/variables";

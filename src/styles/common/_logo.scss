@@ -1,0 +1,8 @@
+.logo {
+  margin-right: 5.375em;
+  &__img {
+  }
+  &--header .logo__img-path {
+    fill: var(--second-accent-color);
+  }
+}

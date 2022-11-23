@@ -1,0 +1,15 @@
+.number {
+  margin-left: 5.875em;
+  a {
+    font-size: 1rem;
+    color: var(--txt);
+    text-decoration: underline;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+
+  a:hover {
+    transition: 0.3s;
+    color: var(--primery-accent-color);
+  }
+}

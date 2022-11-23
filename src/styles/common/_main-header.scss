@@ -1,0 +1,15 @@
+@import "../mixins/media";
+
+.main-header {
+  display: flex;
+  width: 100%;
+  padding-top: 1.45em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
