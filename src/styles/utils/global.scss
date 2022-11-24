@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Muller";
+  font-family: "Muller", sans-serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 1;
@@ -26,11 +26,19 @@ h4 {
 }
 
 h1 {
-  font-family: "Muller";
+  font-family: "Muller", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.75rem;
   line-height: 1;
+}
+
+h2 {
+  font-family: "Muller", sans-serif;
+  font-size: 1,875rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1.73em;
 }
 
 p {

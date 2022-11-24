@@ -1,0 +1,32 @@
+.project-card {
+        background-color: var(--primery-accent-color);
+        padding: 2em 2.375em;
+        border-radius: 20px;
+        display: grid;
+        grid-template-rows: 1fr -webkit-max-content;
+        grid-template-rows: 1fr max-content;
+
+        img {
+                border-radius: 20px;
+                margin-bottom: 2em;
+        }
+
+        &__title {
+                color: var(--contrast-txt);
+                font-size: 1rem;
+                font-weight: 700;
+                margin-bottom: 1.0625em;
+        }
+
+        &__description {
+                color: var(--contrast-txt);
+                font-weight: 300;
+                font-size: 1rem;
+                margin-bottom: 2.25em;
+        }
+
+        &__buttons {
+                align-self: end;
+        }
+}
+
