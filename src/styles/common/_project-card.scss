@@ -2,13 +2,21 @@
         background-color: var(--primery-accent-color);
         padding: 2em 2.375em;
         border-radius: 20px;
-        display: grid;
-        grid-template-rows: 1fr -webkit-max-content;
-        grid-template-rows: 1fr max-content;
+        // display: grid;
+        // grid-template-rows: 1fr -webkit-max-content;
+        // grid-template-rows: 1fr max-content;
+        display: flex;
+        flex-direction: column;
 
         img {
                 border-radius: 20px;
                 margin-bottom: 2em;
+        }
+
+        &__txt {
+                flex-grow: 1; 
+                display: flex;
+                flex-direction: column;
         }
 
         &__title {
@@ -26,7 +34,37 @@
         }
 
         &__buttons {
-                align-self: end;
+                margin-top: auto;
+                display: flex;
+                align-items: center;
+
+                .button {
+                        background-color: var(--idle-button);
+                        max-width: 12.5em;
+                        width: 100%;
+                        font-weight: 500;
+                        color: var(--txt);
+                        font-size: 1rem;
+                        text-align: center;
+                        border-radius: 1.5em;
+                        transition: 0.3s;
+                        padding: 1em 0;
+
+                }
+
+                .button:not(:last-of-type) {
+                        margin-right: 1.4375em;
+                }
+
+                .button:hover {
+                        background-color: var(--second-accent-color);
+                        color: var(--contrast-txt);
+                        transition: 0.3s;
+                }
         }
+}
+
+.project-card.hidden {
+        display: none;
 }
 
