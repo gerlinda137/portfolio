@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    margin-bottom: 7.875em;
 
     &__cards{
         overflow: hidden
@@ -18,6 +19,11 @@
         box-sizing: border-box;
         width: 100%;
         transition: 0.3s;
+    }
+
+    &__card-img {
+        margin-bottom: 1.875em;
+        display: flex;
     }
 
     &__card img {
@@ -40,6 +46,17 @@
         display: flex;
         align-items: center;
         margin-top: auto;
+
+    }
+
+    &__card-txt span {
+        color: var(--contrast-txt);
+        font-size: 1.125rem;
+        margin-left: 1em;
+    }
+
+    &__card-txt svg {
+        flex-shrink: 0;
     }
 }
 
