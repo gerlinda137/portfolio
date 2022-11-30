@@ -1,5 +1,19 @@
-.footer {
-    border:
-        1px
-        solid red;
+.main-footer {
+    background-color: var(--footer-bg);
+
+    &__container.container {
+        padding: 4.5em 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid var(--contrast-txt);
+        padding-bottom: 0.875em;
+        margin-left: 80px;
+        margin-bottom: 2em;
+    }
 }
