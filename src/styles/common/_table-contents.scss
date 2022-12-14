@@ -1,0 +1,37 @@
+.table-contents {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    grid-auto-rows: 1fr;
+
+    &.hidden {
+        display: none;
+    }
+
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.5625em;
+        border: 0.5px solid #D3E7F9;
+        // min-height: 232px;
+
+        img {
+            width: 112px;
+            -o-object-fit: scale-down;
+               object-fit: scale-down;
+            -o-object-position: center;
+               object-position: center;
+               margin-bottom: 0.375em;
+        }
+
+        span {
+            text-align: center;
+            font-size: 1.125rem;
+        }
+    }
+}

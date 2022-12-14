@@ -2,7 +2,7 @@
 
 @mixin media-tablet {
 
-    @media (min-width: $mediaWidthTablet) {
+    @media (max-width: $mediaWidthTablet) {
         @content;
     }
 }

@@ -1,0 +1,34 @@
+.tabs {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    background-color: var(--second-accent-color);
+    max-width: 14.17em;
+    width: 100%;
+    border-bottom-left-radius: 1.25em;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        padding: 2em 0;
+        padding-left: 2em;
+
+        button {
+            color: var(--contrast-txt);
+            font-weight: 400;
+            font-size: 1.125rem;
+            line-height: 1; 
+            text-align: left;
+
+            // &:hover {
+            //     // text-shadow: 2px 2px #245783;
+            // }
+        }
+    }
+
+    &__item.active {
+        background-color: var(--primery-accent-color);
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,34 +11,50 @@
   <body>
     <header class="main-header">
       <div class="main-header__container container">
-        <a href="#" class="logo logo--header">
-          <svg
-            class="logo__img"
-            width="62"
-            height="62"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_42_1204)">
-              <path
-                class="logo__img-path"
-                d="M31.08-.121l-26.842 15.5v31l26.841 15.5 26.841-15.5v-31L31.08-.121zM20.714 35.765l-2.57 2.571-7.457-7.457 7.456-7.457 2.57 2.57-4.886 4.887 4.887 4.886zm7.712 4.484l-3.252-1.626 8.557-17.114 3.251 1.626-8.556 17.114zm15.587-1.913l-2.57-2.57 4.886-4.887-4.886-4.886 2.57-2.571 7.457 7.457-7.456 7.457z"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_42_1204">
-                <path fill="#fff" d="M0 0h62v62H0z" />
-              </clipPath>
-            </defs>
-          </svg>
-        </a>
-        <nav class="nav nav--main">
-          <ul class="nav__list">
-            <li class="nav__list-item"><a href="#">Навыки</a></li>
-            <li class="nav__list-item"><a href="#">Портфолио</a></li>
-            <li class="nav__list-item"><a href="#">Образование</a></li>
-          </ul>
-        </nav>
+        <div class="main-header__inner">
+          <button class="burger" type="button">
+            <span class="line line--1"></span>
+            <span class="line line--2"></span>
+            <span class="line line--3"></span>
+          </button>
+          <a href="#" class="logo logo--header">
+            <svg
+              class="logo__img"
+              width="62"
+              height="62"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_42_1204)">
+                <path
+                  class="logo__img-path"
+                  d="M31.08-.121l-26.842 15.5v31l26.841 15.5 26.841-15.5v-31L31.08-.121zM20.714 35.765l-2.57 2.571-7.457-7.457 7.456-7.457 2.57 2.57-4.886 4.887 4.887 4.886zm7.712 4.484l-3.252-1.626 8.557-17.114 3.251 1.626-8.556 17.114zm15.587-1.913l-2.57-2.57 4.886-4.887-4.886-4.886 2.57-2.571 7.457 7.457-7.456 7.457z"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_42_1204">
+                  <path fill="#fff" d="M0 0h62v62H0z" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <nav class="nav nav--main">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="#">Навыки</a></li>
+              <li class="nav__list-item"><a href="#">Портфолио</a></li>
+              <li class="nav__list-item"><a href="#">Образование</a></li>
+            </ul>
+          </nav>
+
+          <div class="number number--menu">
+            <a href="tel:+79217882042" aria-label="russian number"
+              >+7 (921) 788-20-42
+            </a>
+            <!-- <a href="tel:+79217882042" aria-label="armenian number"
+              >+7 (921) 788-20-42
+            </a> -->
+          </div>
+        </div>
         <ul class="socials">
           <li class="socials__item">
             <a href="https://t.me/Gerlinda137" aria-label="telegram">
@@ -86,7 +102,7 @@
             </a>
           </li>
         </ul>
-        <div class="number">
+        <div class="number number--header">
           <a href="tel:+79217882042" aria-label="russian number"
             >+7 (921) 788-20-42
           </a>
@@ -104,7 +120,11 @@
           <span>frontend-разработка</span>
           <a href="https://t.me/Gerlinda137" class="top__button">Написать</a>
         </div>
-        <div class="top__profile-pic">
+        <div
+          class="top__profile-pic"
+          data-wow-duration="2s"
+          data-wow-delay="5s"
+        >
           <img
             width="428"
             src="img/profile.png"
@@ -112,6 +132,158 @@
             srcset="img/profile.png 1x, img/profile@2x.png 2x"
           />
         </div>
+      </section>
+      <section class="skills container">
+        <h2>Навыки</h2>
+        <section class="skills-table">
+          <div class="skills-table__top">
+            <span class="skills-table__top-left">Навыки</span>
+            <span class="skills-table__top-right" id="table-title"
+              >Верстка</span
+            >
+          </div>
+          <div class="skills-table__body">
+            <ul class="tabs">
+              <li class="tabs__item active">
+                <button id="btn-0" type="button">Верстка</button>
+              </li>
+              <li class="tabs__item">
+                <button id="btn-1" type="button">Инструменты</button>
+              </li>
+              <li class="tabs__item">
+                <button id="btn-2" type="button">Дополнительные навыки</button>
+              </li>
+            </ul>
+            <div class="table-content">
+              <ul id="table-content-0" class="table-contents">
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Следование методологии БЭМ </span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+              </ul>
+              <ul id="table-content-1" class="table-contents hidden">
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Следование методологии БЭМ </span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+              </ul>
+              <ul id="table-content-2" class="table-contents hidden">
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Следование методологии БЭМ </span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+                <li class="table-contents__item">
+                  <img src="img/icons/accessibility.svg" alt="" />
+                  <span>Доступность</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
       <section class="portfolio container">
         <h2>Портфолио</h2>
@@ -272,19 +444,18 @@
         </button>
       </section>
       <section class="education">
-        <h2>Образование</h2>
+        <h2 class="" data-wow-duration="2s" data-wow-delay="5s">Образование</h2>
         <div class="education__cards swiper">
-          <div class="education__cards-container swiper-wrapper ">
+          <div class="education__cards-container swiper-wrapper">
             <div class="education__card swiper-slide">
               <div class="education__card-img">
                 <img
-                width="302"
-                src="img/h1.jpg"
-                alt="Сертификат"
-                srcset="img/h1.jpg 1x, img/h1@2x.jpg 2x"
-              />
+                  width="302"
+                  src="img/h1.jpg"
+                  alt="Сертификат"
+                  srcset="img/h1.jpg 1x, img/h1@2x.jpg 2x"
+                />
               </div>
-              
               <div class="education__card-txt">
                 <svg
                   width="46"
@@ -304,13 +475,13 @@
             <div class="education__card swiper-slide">
               <div class="education__card-img">
                 <img
-                width="302"
-                src="img/h1.jpg"
-                alt="Сертификат"
-                srcset="img/h1.jpg 1x, img/h1@2x.jpg 2x"
-              />
+                  width="302"
+                  src="img/h1.jpg"
+                  alt="Сертификат"
+                  srcset="img/h1.jpg 1x, img/h1@2x.jpg 2x"
+                />
               </div>
-              
+
               <div class="education__card-txt">
                 <svg
                   width="46"
@@ -329,14 +500,14 @@
             </div>
             <div class="education__card swiper-slide">
               <div class="education__card-img">
-                  <img
+                <img
                   width="302"
                   src="img/js1.jpg"
                   alt="Сертификат"
                   srcset="img/js1.jpg 1x, img/js1@2x.jpg 2x"
-                  />
+                />
               </div>
-             
+
               <div class="education__card-txt">
                 <svg
                   width="46"
@@ -356,13 +527,13 @@
             <div class="education__card swiper-slide">
               <div class="education__card-img">
                 <img
-                width="302"
-                src="img/t1.jpg"
-                alt="Сертификат"
-                srcset="img/t1.jpg 1x, img/t1@2x.jpg 2x"
-              />
+                  width="302"
+                  src="img/t1.jpg"
+                  alt="Сертификат"
+                  srcset="img/t1.jpg 1x, img/t1@2x.jpg 2x"
+                />
               </div>
-              
+
               <div class="education__card-txt">
                 <svg
                   width="46"
@@ -378,32 +549,37 @@
                 </svg>
                 <span>Курсы по тестированию</span>
               </div>
-          </div>
-          <div class="education__card swiper-slide">
-            <div class="education__card-img">
-               <img
-              width="302"
-              src="https://via.placeholder.com/302"
-              alt="Сертификат"
-              srcset="https://via.placeholder.com/302 1x, https://via.placeholder.com/302 2x"
-            /> 
             </div>
-            
-            <div class="education__card-txt">
-              <svg
-                width="46"
-                height="58"
-                viewBox="0 0 46 58"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M22.9009 0L0 2.39794V44.3772L22.9009 58L45.8019 44.3772V2.39794L23.1366 0.029L22.9009 0ZM42.8004 42.6699L22.9009 54.5164L3.0015 42.6699V25.4692L22.8158 37.2596L22.8448 39.4019L9.251 31.3019L9.23288 33.3881L22.8828 41.5914L22.9209 43.7809L9.27094 35.6628L9.25281 37.7399L22.9028 45.9432L36.685 37.6927V35.6066L36.6669 35.6156V28.8369L42.8022 25.1738L42.8004 42.6699ZM42.7913 22.9481L34.8326 27.6406L22.8429 20.503L22.8248 22.5801L33.0673 28.6683L32.9821 28.7245L32.7555 28.8568L31.3019 29.7159L22.8429 24.6844L22.8248 26.7525L29.4984 30.7273L27.9216 31.784L27.8835 31.8021L22.8429 28.8278L22.8248 30.9049L26.129 32.8588L22.7596 34.8797L3.03956 23.1547L22.7886 11.2882L42.7913 22.9481ZM42.8004 20.8619L22.7868 9.0625L2.99969 20.8438V5.09675L22.8991 3.01056L42.8076 5.09675V20.8528L42.8004 20.8619Z"
-                  fill="white"
+            <div class="education__card swiper-slide">
+              <div class="education__card-img">
+                <img
+                  width="302"
+                  src="https://via.placeholder.com/302"
+                  alt="Сертификат"
+                  srcset="
+                    https://via.placeholder.com/302 1x,
+                    https://via.placeholder.com/302 2x
+                  "
                 />
-              </svg>
-              <span>РГГМУ бакалавр английской филологии</span>
+              </div>
+
+              <div class="education__card-txt">
+                <svg
+                  width="46"
+                  height="58"
+                  viewBox="0 0 46 58"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M22.9009 0L0 2.39794V44.3772L22.9009 58L45.8019 44.3772V2.39794L23.1366 0.029L22.9009 0ZM42.8004 42.6699L22.9009 54.5164L3.0015 42.6699V25.4692L22.8158 37.2596L22.8448 39.4019L9.251 31.3019L9.23288 33.3881L22.8828 41.5914L22.9209 43.7809L9.27094 35.6628L9.25281 37.7399L22.9028 45.9432L36.685 37.6927V35.6066L36.6669 35.6156V28.8369L42.8022 25.1738L42.8004 42.6699ZM42.7913 22.9481L34.8326 27.6406L22.8429 20.503L22.8248 22.5801L33.0673 28.6683L32.9821 28.7245L32.7555 28.8568L31.3019 29.7159L22.8429 24.6844L22.8248 26.7525L29.4984 30.7273L27.9216 31.784L27.8835 31.8021L22.8429 28.8278L22.8248 30.9049L26.129 32.8588L22.7596 34.8797L3.03956 23.1547L22.7886 11.2882L42.7913 22.9481ZM42.8004 20.8619L22.7868 9.0625L2.99969 20.8438V5.09675L22.8991 3.01056L42.8076 5.09675V20.8528L42.8004 20.8619Z"
+                    fill="white"
+                  />
+                </svg>
+                <span>РГГМУ бакалавр английской филологии</span>
+              </div>
             </div>
+          </div>
         </div>
       </section>
     </main>
@@ -447,7 +623,7 @@
             </a> -->
           </div>
         </div>
-        
+
         <ul class="socials socials--footer">
           <li class="socials__item">
             <a href="https://t.me/Gerlinda137" aria-label="telegram">

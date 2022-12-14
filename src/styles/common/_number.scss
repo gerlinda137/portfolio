@@ -23,5 +23,23 @@
       color: var(--second-accent-color);
     }
   }
+
+  &--menu {
+    display: none;
+  }
+}
+
+@include media-tablet {
+  .number {
+    &--header {
+      display: none;
+    }
+
+    &--menu {
+      display: block;
+      margin-left: 0;
+      display: none;
+    }
+  }
 }
 

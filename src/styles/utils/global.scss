@@ -1,7 +1,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -35,7 +35,7 @@ h1 {
 
 h2 {
   font-family: "Muller", sans-serif;
-  font-size: 1,875rem;
+  font-size: 1.875rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 1.73em;

@@ -39,3 +39,43 @@ showMoreBtn.addEventListener("click", () => {
     }
   }
 });
+
+// tabs
+
+const skillTable = document.querySelector(".skills-table");
+// const tableTitle = skillTable.querySelector("#table-title");
+const tabs = skillTable.querySelectorAll(".tabs__item button");
+// const tableContent = skillTable.querySelector(".table-content");
+// const tableContents = tableContent.querySelectorAll(".table-contents");
+
+for (let j = 0; j < tabs.length; j++) {
+  const tab = tabs[j];
+  tab.onclick = () => {
+    tabs.forEach((e) => {
+      e.parentNode.classList.remove("active");
+    });
+    tab.parentNode.classList.add("active");
+    // const tabId = tab.id;
+  };
+}
+
+// for (const tab of tabs) {
+//   tab.onclick = () => {
+//     tabs.forEach((e) => {
+//       e.parentNode.classList.remove("active");
+//     });
+//     tab.parentNode.classList.add("active");
+//     const tabId = tab.id;
+//   };
+// }
+
+// burger
+
+const burger = document.querySelector(".burger");
+const headerInner = document.querySelector(".main-header__inner");
+
+burger.addEventListener("click", () => {
+  headerInner.classList.toggle("open");
+});
+
+// reveal

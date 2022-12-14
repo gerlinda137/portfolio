@@ -1,5 +1,5 @@
 .logo {
-  margin-right: 5.375em;
+  margin-right: 5em;
 
   &--header .logo__img-path {
     fill: var(--second-accent-color);
@@ -10,3 +10,19 @@
   }
 
 }
+
+
+@include media-tablet {
+  .logo {
+
+    &--header {
+      margin-right: 0;
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      display: none;
+    }
+    
+  }
+}
+  
