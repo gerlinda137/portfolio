@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Gulp-template</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
 
   <body>
@@ -134,8 +136,8 @@
         </div>
       </section>
       <section class="skills container">
-        <h2>Навыки</h2>
-        <section class="skills-table">
+        <h2 data-aos="fade-up">Навыки</h2>
+        <section data-aos="fade-up" class="skills-table">
           <div class="skills-table__top">
             <span class="skills-table__top-left">Навыки</span>
             <span class="skills-table__top-right" id="table-title"
@@ -286,9 +288,9 @@
         </section>
       </section>
       <section class="portfolio container">
-        <h2>Портфолио</h2>
+        <h2 data-aos="fade-up">Портфолио</h2>
         <div class="gallery">
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p1.jpg 1x, img/p1@2x.jpg 2x"
               width="505"
@@ -309,7 +311,7 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
               width="505"
@@ -332,7 +334,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
               width="505"
@@ -352,7 +354,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p4.jpg 1x, img/p4@2x.jpg 2x"
               width="505"
@@ -372,7 +374,7 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
               width="505"
@@ -393,7 +395,7 @@
             </div>
           </article>
 
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
               width="505"
@@ -413,7 +415,7 @@
               </div>
             </div>
           </article>
-          <article class="project-card">
+          <article data-aos="fade-up" class="project-card">
             <img
               srcset="img/p1.jpg 1x, img/p2@2x.jpg 2x"
               width="505"
@@ -435,6 +437,7 @@
           </article>
         </div>
         <button
+          data-aos="fade-up"
           id="show-more"
           class="portfolio__show-more button"
           type="button"
@@ -444,8 +447,8 @@
         </button>
       </section>
       <section class="education">
-        <h2 class="" data-wow-duration="2s" data-wow-delay="5s">Образование</h2>
-        <div class="education__cards swiper">
+        <h2 data-aos="fade-up">Образование</h2>
+        <div class="education__cards swiper" data-aos="fade-up">
           <div class="education__cards-container swiper-wrapper">
             <div class="education__card swiper-slide">
               <div class="education__card-img">
@@ -673,6 +676,7 @@
         </ul>
       </div>
     </footer>
+
     <script src="js/main.min.js"></script>
   </body>
 </html>

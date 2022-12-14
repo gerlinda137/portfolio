@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
-
+// eslint-disable-next-line no-unused-vars
+import Typed from "typed.js";
 import "normalize.css";
 
 // eslint-disable-next-line no-unused-vars
@@ -79,3 +80,7 @@ burger.addEventListener("click", () => {
 });
 
 // reveal
+// eslint-disable-next-line no-undef
+AOS.init();
+
+// typed
