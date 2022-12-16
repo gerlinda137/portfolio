@@ -1,7 +1,5 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
-// eslint-disable-next-line no-unused-vars
-import Typed from "typed.js";
 import "normalize.css";
 
 // eslint-disable-next-line no-unused-vars
@@ -81,6 +79,20 @@ burger.addEventListener("click", () => {
 
 // reveal
 // eslint-disable-next-line no-undef
-AOS.init();
+AOS.init({
+  once: true,
+});
 
 // typed
+// eslint-disable-next-line no-unused-vars
+const app = document.getElementById("app");
+
+const typewriter = new Typewriter(app, {
+  cursor: "",
+});
+
+typewriter
+  .typeString("<span>веб-верстка</span> <br>")
+  .pauseFor(500)
+  .typeString("<span>фронтенд-разработка</span>")
+  .start();
