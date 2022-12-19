@@ -7,7 +7,7 @@ module.exports = function imageMinify() {
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
-        imagemin.mozjpeg({
+        imagemin.jpegtran({
           quality: 75,
           progressive: true,
         }),
