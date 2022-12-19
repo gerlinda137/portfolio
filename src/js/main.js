@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import "normalize.css";
+// import Typewriter from "typewriter-effect/dist/core";
 
 // eslint-disable-next-line no-unused-vars
 const swiper = new Swiper(".swiper", {
@@ -87,12 +88,14 @@ AOS.init({
 // eslint-disable-next-line no-unused-vars
 const app = document.getElementById("app");
 
+// eslint-disable-next-line no-undef
 const typewriter = new Typewriter(app, {
   cursor: "",
 });
 
 typewriter
-  .typeString("<span>веб-верстка</span> <br>")
   .pauseFor(500)
-  .typeString("<span>фронтенд-разработка</span>")
+  .typeString("<p>веб-верстка</p>")
+  .pauseFor(500)
+  .typeString("<p>фронтенд-разработка</p>")
   .start();
