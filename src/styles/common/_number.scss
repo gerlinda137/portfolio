@@ -43,3 +43,11 @@
   }
 }
 
+@include media-mobile {
+  .number {
+    &--footer {
+      display: none;
+    }
+  }
+}
+

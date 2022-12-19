@@ -18,3 +18,30 @@
         margin-bottom: 2em;
     }
 }
+
+@include media-tablet {
+    .main-footer {
+        &__container.container {
+            padding-top: 2.9375em;
+            padding-bottom: 3.375em;
+        }
+      
+        &__inner {
+            margin-left: 0;
+        }
+    }
+}
+
+
+@include media-mobile {
+    .main-footer {
+        &__inner {
+            border-bottom: none;
+            margin-left: 0;
+            margin-bottom: 4em;
+            width: 100%;
+        }
+    }
+    
+
+}

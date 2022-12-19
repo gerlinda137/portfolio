@@ -29,3 +29,12 @@
     }
   }
 }
+
+
+@include media-mobile {
+  .socials {
+    &--footer {
+      margin: 0 auto;
+    }
+  }
+}

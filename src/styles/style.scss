@@ -1,3 +1,12 @@
+
+@import "utils/fonts";
+
+@import "utils/global";
+
+@import "utils/variables";
+
+@import "mixins/media";
+
 @import "common/main-header";
 
 @import "common/nav";
@@ -34,10 +43,4 @@
 
 @import "common/education";
 
-@import "utils/fonts";
 
-@import "utils/global";
-
-@import "utils/variables";
-///
-/// 

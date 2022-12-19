@@ -1,3 +1,5 @@
+@import '../mixins/media.scss';
+
 *,
 *::before,
 *::after {
@@ -16,6 +18,7 @@ body {
   line-height: 1;
   background-color: var(--bg);
   color: var(--txt);
+  min-width: 320px;
 }
 
 h1,
@@ -75,4 +78,16 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 7.2538em;
+}
+
+@include media-tablet {
+  .container {
+    padding:0 45px;
+  }
+}
+
+@include media-mobile {
+  .container {
+    padding: 0 29px;
+  }
 }

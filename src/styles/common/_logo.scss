@@ -22,7 +22,21 @@
       top: 1em;
       display: none;
     }
+
+    &--footer {
+      margin-right: 0;
+      margin-bottom: 3.625em;
+    }
     
+  }
+}
+
+@include media-mobile {
+  .logo {
+    &--footer {
+      margin-right: 0;
+      margin-bottom: 2.125em;
+    }
   }
 }
   

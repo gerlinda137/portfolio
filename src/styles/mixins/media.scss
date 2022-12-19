@@ -2,10 +2,18 @@
 
 @mixin media-tablet {
 
-    @media (max-width: $mediaWidthTablet) {
+    @media screen and (min-width: $mediaWidthTablet) and (max-width: 1023px) {
         @content;
     }
 }
+
+@mixin media-mobile {
+
+    @media screen and (max-width: 767px) {
+        @content;
+    }
+}
+
 
 @mixin media-tablet-horizontal {
 

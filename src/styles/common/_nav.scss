@@ -51,8 +51,28 @@
         margin-right: 0;
         margin-bottom: 1em;
       }
-  }
+    }
   }
 }
 
+
+@include media-mobile {
+  .nav {
+    &--footer {
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+
+      .nav__list-item:not(:last-child) {
+        margin-right: 0;
+      }
+      
+      .nav__list {
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+  }
+}
 
