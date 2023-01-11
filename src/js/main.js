@@ -48,31 +48,33 @@ function hidePortfolioCards() {
 // tabs
 
 const skillTable = document.querySelector(".skills-table");
-// const tableTitle = skillTable.querySelector("#table-title");
+const tableTitle = skillTable.querySelector("#table-title");
 const tabs = skillTable.querySelectorAll(".tabs__item button");
-// const tableContent = skillTable.querySelector(".table-content");
-// const tableContents = tableContent.querySelectorAll(".table-contents");
+const tableContent = skillTable.querySelector(".table-content");
+const tableContents = tableContent.querySelectorAll(".table-contents");
 
 for (let j = 0; j < tabs.length; j++) {
   const tab = tabs[j];
   tab.onclick = () => {
-    tabs.forEach((e) => {
-      e.parentNode.classList.remove("active");
+    tabs.forEach((element) => {
+      element.parentNode.classList.remove("active");
     });
+
     tab.parentNode.classList.add("active");
-    // const tabId = tab.id;
+    const tabId = tab.id;
+    const trimmedBtnId = tabId.split("-");
+    const btnIdNumber = trimmedBtnId.pop();
+    tableTitle.textContent = tab.textContent;
+
+    for (const content of tableContents) {
+      content.classList.add("hidden");
+
+      if (btnIdNumber === content.id) {
+        content.classList.remove("hidden");
+      }
+    }
   };
 }
-
-// for (const tab of tabs) {
-//   tab.onclick = () => {
-//     tabs.forEach((e) => {
-//       e.parentNode.classList.remove("active");
-//     });
-//     tab.parentNode.classList.add("active");
-//     const tabId = tab.id;
-//   };
-// }
 
 // burger
 
