@@ -5,15 +5,16 @@
     padding-left: 0;
     margin: 0;
     background-color: var(--second-accent-color);
-    max-width: 14.17em;
     width: 100%;
     border-bottom-left-radius: 1.25em;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
 
     &__item {
         display: flex;
         align-items: center;
-        padding: 2em 0;
-        padding-left: 2em;
+        padding: 2em 0.44444444444em 2em 2em;
 
         button {
             color: var(--contrast-txt);
@@ -21,10 +22,14 @@
             font-size: 1.125rem;
             line-height: 1; 
             text-align: left;
+            display: flex;
+            align-items: center;
+            max-width: 11.94em;
+            width: 100%;
 
-            // &:hover {
-            //     // text-shadow: 2px 2px #245783;
-            // }
+            svg {
+                margin-right: 1.16666666667em;
+            }
         }
     }
 
