@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 1em;
 
     &__show-more {
         color: var(--txt);
@@ -28,7 +29,7 @@
 }
 
 .portfolio.container {
-    margin-bottom: 7.875em;
+    margin-bottom: 6.875em;
 }
 
 
