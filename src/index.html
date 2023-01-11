@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Gulp-template</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   </head>
 
   <body>
@@ -291,151 +291,155 @@
       <section class="portfolio container">
         <h2 data-aos="fade-up">Портфолио</h2>
         <div class="gallery">
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p1.jpg 1x, img/p1@2x.jpg 2x"
-              width="505"
-              src="img/p1.jpg"
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">
-                Корпоративный лендинг компании по организации праздников
-              </h3>
-              <p class="project-card__description">
-                Верстка выполнена в соответствии с методологией БЭМ на flexbox и
-                grid, препроцессор SASS (SCSS синтаксис).
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+          <div class="gallery__inner">
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p1.jpg 1x, img/p1@2x.jpg 2x"
+                width="505"
+                src="img/p1.jpg"
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">
+                  Корпоративный лендинг компании по организации праздников
+                </h3>
+                <p class="project-card__description">
+                  Верстка выполнена в соответствии с методологией БЭМ на flexbox
+                  и grid, препроцессор SASS (SCSS синтаксис).
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">
-                Интернет-магазин натуральной косметики
-              </h3>
-              <p class="project-card__description">
-                Резиновая адаптивная верстка главной и каталога на flexbox и
-                grid с препроцессором SASS (сборка gulp + webpack для js) в
-                соответствии с БЭМ.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+            </article>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">
+                  Интернет-магазин натуральной косметики
+                </h3>
+                <p class="project-card__description">
+                  Резиновая адаптивная верстка главной и каталога на flexbox и
+                  grid с препроцессором SASS (сборка gulp + webpack для js) в
+                  соответствии с БЭМ.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">Лендинг мебельной компании</h3>
-              <p class="project-card__description">
-                Адаптивная резиновая верстка на flexbox и grid, слайдеры
-                реализованы с помощью библиотеки swiper.js.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">Лендинг мебельной компании</h3>
+                <p class="project-card__description">
+                  Адаптивная резиновая верстка на flexbox и grid, слайдеры
+                  реализованы с помощью библиотеки swiper.js.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p4.jpg 1x, img/p4@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">Интернет-магазин инструментов</h3>
-              <p class="project-card__description">
-                Семантическая верстка главной страницы и каталога товаров на
-                чистом html/css. Реализовано открытие / закрытие попапа и
-                функционал слайдера на главной странице на js.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a>
-                <a class="button" href="#">Репозиторий</a>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p4.jpg 1x, img/p4@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">
+                  Интернет-магазин инструментов
+                </h3>
+                <p class="project-card__description">
+                  Семантическая верстка главной страницы и каталога товаров на
+                  чистом html/css. Реализовано открытие / закрытие попапа и
+                  функционал слайдера на главной странице на js.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a>
+                  <a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">Лендинг мебельной компании</h3>
-              <p class="project-card__description">
-                Семантическая верстка главной страницы и каталога товаров на
-                чистом html/css. Реализовано открытие / закрытие попапа и
-                функционал слайдера на главной странице на js.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+            </article>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">Лендинг мебельной компании</h3>
+                <p class="project-card__description">
+                  Семантическая верстка главной страницы и каталога товаров на
+                  чистом html/css. Реализовано открытие / закрытие попапа и
+                  функционал слайдера на главной странице на js.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
 
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">Лендинг мебельной компании</h3>
-              <p class="project-card__description">
-                Семантическая верстка главной страницы и каталога товаров на
-                чистом html/css. Реализовано открытие / закрытие попапа и
-                функционал слайдера на главной странице на js.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">Лендинг мебельной компании</h3>
+                <p class="project-card__description">
+                  Семантическая верстка главной страницы и каталога товаров на
+                  чистом html/css. Реализовано открытие / закрытие попапа и
+                  функционал слайдера на главной странице на js.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
-          <article data-aos="fade-up" class="project-card">
-            <img
-              srcset="img/p1.jpg 1x, img/p2@2x.jpg 2x"
-              width="505"
-              src=""
-              alt="Project preview"
-            />
-            <div class="project-card__txt">
-              <h3 class="project-card__title">Лендинг мебельной компании</h3>
-              <p class="project-card__description">
-                Семантическая верстка главной страницы и каталога товаров на
-                чистом html/css. Реализовано открытие / закрытие попапа и
-                функционал слайдера на главной странице на js.
-              </p>
-              <div class="project-card__buttons">
-                <a class="button" href="#">Сайт</a
-                ><a class="button" href="#">Репозиторий</a>
+            </article>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p1.jpg 1x, img/p2@2x.jpg 2x"
+                width="505"
+                src=""
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">Лендинг мебельной компании</h3>
+                <p class="project-card__description">
+                  Семантическая верстка главной страницы и каталога товаров на
+                  чистом html/css. Реализовано открытие / закрытие попапа и
+                  функционал слайдера на главной странице на js.
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="#">Сайт</a
+                  ><a class="button" href="#">Репозиторий</a>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          </div>
         </div>
         <button
           data-aos="fade-up"

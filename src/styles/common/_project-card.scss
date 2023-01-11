@@ -68,3 +68,12 @@
         display: none;
 }
 
+@include media-tablet {
+        .project-card {
+                max-width: 580px;
+                min-width: 317px;
+                width: 100%;
+                flex-shrink: 0;
+        }
+}
+

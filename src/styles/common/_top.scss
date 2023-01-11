@@ -70,3 +70,63 @@
   padding-right: 2em;
   margin-bottom: 7.6875em;
 }
+
+@include media-tablet {
+  .top {
+    &__profile-pic {
+      margin-right: 0;
+      margin-top: 0;
+      max-width: 282px;
+      width: 100%;
+      flex-shrink: 0;
+    }
+    
+    &__txt h1 {
+      margin-bottom: 0.54em;
+      font-size: 1.875rem;
+    }
+    
+    &__txt p {
+      font-size: 1rem;
+      margin-bottom: 1em;
+    }
+    
+    &__txt p:last-of-type {
+      margin-bottom: 2.8125em;
+    }
+    
+    &__button {
+      font-size: 1rem;
+      padding: 1.0625em 6.625em;
+
+      &::before {
+      width: 32px;
+      height: 32px;
+      }
+    }
+    
+  }
+
+  .top.container {
+    padding-right: 45px ;
+  }
+}
+
+@include media-mobile {
+  .top {
+    flex-direction: column;
+
+    &__txt {
+      align-items: unset;
+      order: 1;
+    }
+
+    &__profile-pic {
+      margin-bottom: 2.125em;
+    }
+
+    &.container {
+      padding-right: 29px;
+    }
+  }
+}

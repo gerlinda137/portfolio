@@ -2,7 +2,7 @@
 
 @mixin media-tablet {
 
-    @media screen and (min-width: $mediaWidthTablet) and (max-width: 1023px) {
+    @media screen and (max-width: $mediaWidthTabletHorizontal) {
         @content;
     }
 }

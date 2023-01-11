@@ -1,6 +1,8 @@
 import Swiper from "swiper";
 import "swiper/swiper-bundle.css";
 import "normalize.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 // import Typewriter from "typewriter-effect/dist/core";
 
 // eslint-disable-next-line no-unused-vars
@@ -19,26 +21,29 @@ const portfolioCards = portfolio.querySelectorAll(`.project-card`);
 const portfolioCardsHidden = [];
 const showMoreBtn = portfolio.querySelector("#show-more");
 
-for (let i = 4; i < portfolioCards.length; i++) {
-  portfolioCards[i].classList.add("hidden");
-  portfolioCardsHidden.push(portfolioCards[i]);
-}
-
-showMoreBtn.addEventListener("click", () => {
-  if (showMoreBtn.dataset.shown === "false") {
-    for (const card of portfolioCardsHidden) {
-      card.classList.remove("hidden");
-      showMoreBtn.textContent = "Скрыть";
-      showMoreBtn.dataset.shown = "true";
-    }
-  } else {
-    for (const card of portfolioCardsHidden) {
-      card.classList.add("hidden");
-      showMoreBtn.textContent = "Показать больше";
-      showMoreBtn.dataset.shown = "false";
-    }
+function hidePortfolioCards() {
+  for (let i = 4; i < portfolioCards.length; i++) {
+    portfolioCards[i].classList.add("hidden");
+    portfolioCardsHidden.push(portfolioCards[i]);
   }
-});
+
+  showMoreBtn.addEventListener("click", () => {
+    if (showMoreBtn.dataset.shown === "false") {
+      for (const card of portfolioCardsHidden) {
+        card.classList.remove("hidden");
+        showMoreBtn.textContent = "Скрыть";
+        showMoreBtn.dataset.shown = "true";
+      }
+    } else {
+      for (const card of portfolioCardsHidden) {
+        card.classList.add("hidden");
+        showMoreBtn.textContent = "Показать больше";
+        showMoreBtn.dataset.shown = "false";
+        showMoreBtn.scrollIntoView({ block: "center", behavior: "smooth" });
+      }
+    }
+  });
+}
 
 // tabs
 
@@ -99,3 +104,24 @@ typewriter
   .pauseFor(500)
   .typeString("<p>фронтенд-разработка</p>")
   .start();
+
+// tab
+
+// window.onload = () => {
+if (window.innerWidth > 1024) {
+  hidePortfolioCards();
+} else if (window.innerWidth <= 1024) {
+  showMoreBtn.classList.add("hidden");
+
+  // eslint-disable-next-line no-unused-vars
+  const swiper2 = new Swiper(".gallery", {
+    speed: 400,
+    spaceBetween: 18,
+    wrapperClass: "gallery__inner",
+    slideClass: "project-card",
+    slidesPerView: "auto",
+    slidesOffsetBefore: 45,
+    slidesOffsetAfter: 45,
+  });
+}
+// };
