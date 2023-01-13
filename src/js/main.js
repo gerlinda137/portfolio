@@ -148,96 +148,108 @@ const toolSkillsCards = toolSkillsList.querySelectorAll("li");
 const markupSkillsCards = markupSkillsList.querySelectorAll("li");
 const additionalSkillsCards = additionalSkillsList.querySelectorAll("li");
 
-if (window.innerWidth <= 1024 && window.innerWidth >= 768) {
-  if (markupSkillsCards.length > 4) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperMarkup = new Swiper(".markup-skills", {
-      speed: 400,
-      spaceBetween: 17,
-      wrapperClass: "table-contents",
-      slideClass: "markup-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 45,
-      slidesOffsetAfter: 45,
-    });
-  } else {
-    markupSkills.classList.add("no-swiper");
-  }
+function transformSkillsToTablet() {
+  if (window.innerWidth <= 1024 && window.innerWidth >= 768) {
+    if (markupSkillsCards.length > 4) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperMarkup = new Swiper(".markup-skills", {
+        speed: 400,
+        spaceBetween: 17,
+        wrapperClass: "table-contents",
+        slideClass: "markup-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 45,
+        slidesOffsetAfter: 45,
+      });
+    } else {
+      markupSkills.classList.add("no-swiper");
+    }
 
-  if (toolSkillsCards.length > 4) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperTools = new Swiper(".tool-skills", {
-      speed: 400,
-      spaceBetween: 17,
-      wrapperClass: "table-contents",
-      slideClass: "tool-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 45,
-      slidesOffsetAfter: 45,
-    });
-  } else {
-    toolSkills.classList.add("no-swiper");
-  }
+    if (toolSkillsCards.length > 4) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperTools = new Swiper(".tool-skills", {
+        speed: 400,
+        spaceBetween: 17,
+        wrapperClass: "table-contents",
+        slideClass: "tool-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 45,
+        slidesOffsetAfter: 45,
+      });
+    } else {
+      toolSkills.classList.add("no-swiper");
+    }
 
-  if (additionalSkillsCards.length > 4) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperAddSkills = new Swiper(".additional-skills", {
-      speed: 400,
-      spaceBetween: 17,
-      wrapperClass: "table-contents",
-      slideClass: "additional-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 45,
-      slidesOffsetAfter: 45,
-    });
-  } else {
-    additionalSkills.classList.add("no-swiper");
+    if (additionalSkillsCards.length > 4) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperAddSkills = new Swiper(".additional-skills", {
+        speed: 400,
+        spaceBetween: 17,
+        wrapperClass: "table-contents",
+        slideClass: "additional-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 45,
+        slidesOffsetAfter: 45,
+      });
+    } else {
+      additionalSkills.classList.add("no-swiper");
+    }
   }
 }
 
-if (window.innerWidth < 768) {
-  if (markupSkillsCards.length > 2) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperMarkup = new Swiper(".markup-skills", {
-      speed: 400,
-      spaceBetween: 11,
-      wrapperClass: "table-contents",
-      slideClass: "markup-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 29,
-      slidesOffsetAfter: 29,
-    });
-  } else {
-    markupSkills.classList.add("no-swiper");
-  }
+function transformSkillsToMobile() {
+  if (window.innerWidth < 768) {
+    if (markupSkillsCards.length > 2) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperMarkup = new Swiper(".markup-skills", {
+        speed: 400,
+        spaceBetween: 11,
+        wrapperClass: "table-contents",
+        slideClass: "markup-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 29,
+        slidesOffsetAfter: 29,
+      });
+    } else {
+      markupSkills.classList.add("no-swiper");
+    }
 
-  if (toolSkillsCards.length > 2) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperTools = new Swiper(".tool-skills", {
-      speed: 400,
-      spaceBetween: 11,
-      wrapperClass: "table-contents",
-      slideClass: "tool-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 29,
-      slidesOffsetAfter: 29,
-    });
-  } else {
-    toolSkills.classList.add("no-swiper");
-  }
+    if (toolSkillsCards.length > 2) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperTools = new Swiper(".tool-skills", {
+        speed: 400,
+        spaceBetween: 11,
+        wrapperClass: "table-contents",
+        slideClass: "tool-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 29,
+        slidesOffsetAfter: 29,
+      });
+    } else {
+      toolSkills.classList.add("no-swiper");
+    }
 
-  if (additionalSkillsCards.length > 2) {
-    // eslint-disable-next-line no-unused-vars
-    const swiperAddSkills = new Swiper(".additional-skills", {
-      speed: 400,
-      spaceBetween: 11,
-      wrapperClass: "table-contents",
-      slideClass: "additional-skills__slider",
-      slidesPerView: "auto",
-      slidesOffsetBefore: 29,
-      slidesOffsetAfter: 29,
-    });
-  } else {
-    additionalSkills.classList.add("no-swiper");
+    if (additionalSkillsCards.length > 2) {
+      // eslint-disable-next-line no-unused-vars
+      const swiperAddSkills = new Swiper(".additional-skills", {
+        speed: 400,
+        spaceBetween: 11,
+        wrapperClass: "table-contents",
+        slideClass: "additional-skills__slider",
+        slidesPerView: "auto",
+        slidesOffsetBefore: 29,
+        slidesOffsetAfter: 29,
+      });
+    } else {
+      additionalSkills.classList.add("no-swiper");
+    }
   }
 }
+
+transformSkillsToTablet();
+transformSkillsToMobile();
+
+window.addEventListener("resize", () => {
+  transformSkillsToTablet();
+  transformSkillsToMobile();
+});
