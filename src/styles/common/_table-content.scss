@@ -21,7 +21,7 @@
 
       white-space: nowrap;
       -webkit-clip-path: inset(100%);
-              clip-path: inset(100%);
+      clip-path: inset(100%);
       clip: rect(0 0 0 0);
       overflow: hidden;
     }
@@ -32,5 +32,15 @@
   .table-content {
     overflow: hidden;
     min-height: unset;
+
+    &__inner {
+      &.no-swiper {
+        padding-left: 45px;
+
+        .table-contents__item:not(:last-child) {
+          margin-right: 17px;
+        }
+      }
+    }
   }
 }

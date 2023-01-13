@@ -136,37 +136,61 @@ if (window.innerWidth > 1024) {
 
 // }
 
+const toolSkills = document.querySelector(".tool-skills");
+const markupSkills = document.querySelector(".markup-skills");
+const additionalSkills = document.querySelector(".additional-skills");
+
+const toolSkillsList = document.querySelector(".tool-skills ul");
+const markupSkillsList = document.querySelector(".markup-skills ul");
+const additionalSkillsList = document.querySelector(".additional-skills ul");
+
+const toolSkillsCards = toolSkillsList.querySelectorAll("li");
+const markupSkillsCards = markupSkillsList.querySelectorAll("li");
+const additionalSkillsCards = additionalSkillsList.querySelectorAll("li");
+
 if (window.innerWidth <= 1024) {
-  // eslint-disable-next-line no-unused-vars
-  const swiperMarkup = new Swiper(".markup-skills", {
-    speed: 400,
-    spaceBetween: 18,
-    wrapperClass: "table-contents",
-    slideClass: "markup-skills__slider",
-    slidesPerView: "auto",
-    slidesOffsetBefore: 45,
-    slidesOffsetAfter: 45,
-  });
+  if (markupSkillsCards.length > 4) {
+    // eslint-disable-next-line no-unused-vars
+    const swiperMarkup = new Swiper(".markup-skills", {
+      speed: 400,
+      spaceBetween: 17,
+      wrapperClass: "table-contents",
+      slideClass: "markup-skills__slider",
+      slidesPerView: "auto",
+      slidesOffsetBefore: 45,
+      slidesOffsetAfter: 45,
+    });
+  } else {
+    markupSkills.classList.add("no-swiper");
+  }
 
-  // eslint-disable-next-line no-unused-vars
-  const swiperTools = new Swiper(".tool-skills", {
-    speed: 400,
-    spaceBetween: 18,
-    wrapperClass: "table-contents",
-    slideClass: "tool-skills__slider",
-    slidesPerView: "auto",
-    slidesOffsetBefore: 45,
-    slidesOffsetAfter: 45,
-  });
+  if (toolSkillsCards.length > 4) {
+    // eslint-disable-next-line no-unused-vars
+    const swiperTools = new Swiper(".tool-skills", {
+      speed: 400,
+      spaceBetween: 17,
+      wrapperClass: "table-contents",
+      slideClass: "tool-skills__slider",
+      slidesPerView: "auto",
+      slidesOffsetBefore: 45,
+      slidesOffsetAfter: 45,
+    });
+  } else {
+    toolSkills.classList.add("no-swiper");
+  }
 
-  // eslint-disable-next-line no-unused-vars
-  const swiperAddSkills = new Swiper(".additional-skills", {
-    speed: 400,
-    spaceBetween: 18,
-    wrapperClass: "table-contents",
-    slideClass: "additional-skills__slider",
-    slidesPerView: "auto",
-    slidesOffsetBefore: 45,
-    slidesOffsetAfter: 45,
-  });
+  if (additionalSkillsCards.length > 4) {
+    // eslint-disable-next-line no-unused-vars
+    const swiperAddSkills = new Swiper(".additional-skills", {
+      speed: 400,
+      spaceBetween: 17,
+      wrapperClass: "table-contents",
+      slideClass: "additional-skills__slider",
+      slidesPerView: "auto",
+      slidesOffsetBefore: 45,
+      slidesOffsetAfter: 45,
+    });
+  } else {
+    additionalSkills.classList.add("no-swiper");
+  }
 }
