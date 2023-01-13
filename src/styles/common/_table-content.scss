@@ -44,3 +44,17 @@
     }
   }
 }
+
+@include media-mobile {
+  .table-content {
+    &__inner {
+      &.no-swiper {
+        padding-left: 29px;
+
+        .table-contents__item:not(:last-child) {
+          margin-right: 11px;
+        }
+      }
+    }
+  }
+}

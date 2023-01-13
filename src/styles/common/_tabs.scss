@@ -72,3 +72,14 @@
     }
   }
 }
+
+@include media-mobile {
+  .tabs {
+    flex-wrap: wrap;
+    padding: 0 29px;
+
+    &__item {
+      margin-bottom: 0.6875em;
+    }
+  }
+}
