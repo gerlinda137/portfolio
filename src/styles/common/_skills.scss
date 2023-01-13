@@ -1,11 +1,20 @@
 .skills {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 6.875em;
-    padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.875em;
+  padding-top: 1em;
 
+  &.container {
+    margin-bottom: 7.875em;
+  }
+}
+
+@include media-tablet {
+  .skills {
     &.container {
-        margin-bottom: 7.875em;
+      padding-right: 0;
+      padding-left: 0;
     }
+  }
 }

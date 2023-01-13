@@ -51,7 +51,9 @@ const skillTable = document.querySelector(".skills-table");
 const tableTitle = skillTable.querySelector("#table-title");
 const tabs = skillTable.querySelectorAll(".tabs__item button");
 const tableContent = skillTable.querySelector(".table-content");
-const tableContents = tableContent.querySelectorAll(".table-contents");
+const tableContentInners = tableContent.querySelectorAll(
+  ".table-content__inner"
+);
 
 for (let j = 0; j < tabs.length; j++) {
   const tab = tabs[j];
@@ -66,11 +68,11 @@ for (let j = 0; j < tabs.length; j++) {
     const btnIdNumber = trimmedBtnId.pop();
     tableTitle.textContent = tab.textContent;
 
-    for (const content of tableContents) {
-      content.classList.add("hidden");
+    for (const content of tableContentInners) {
+      content.classList.add("visually-hidden");
 
       if (btnIdNumber === content.id) {
-        content.classList.remove("hidden");
+        content.classList.remove("visually-hidden");
       }
     }
   };
@@ -127,3 +129,44 @@ if (window.innerWidth > 1024) {
   });
 }
 // };
+
+// skills-table tablet
+
+// function skillsTableToSlides () {
+
+// }
+
+if (window.innerWidth <= 1024) {
+  // eslint-disable-next-line no-unused-vars
+  const swiperMarkup = new Swiper(".markup-skills", {
+    speed: 400,
+    spaceBetween: 18,
+    wrapperClass: "table-contents",
+    slideClass: "markup-skills__slider",
+    slidesPerView: "auto",
+    slidesOffsetBefore: 45,
+    slidesOffsetAfter: 45,
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  const swiperTools = new Swiper(".tool-skills", {
+    speed: 400,
+    spaceBetween: 18,
+    wrapperClass: "table-contents",
+    slideClass: "tool-skills__slider",
+    slidesPerView: "auto",
+    slidesOffsetBefore: 45,
+    slidesOffsetAfter: 45,
+  });
+
+  // eslint-disable-next-line no-unused-vars
+  const swiperAddSkills = new Swiper(".additional-skills", {
+    speed: 400,
+    spaceBetween: 18,
+    wrapperClass: "table-contents",
+    slideClass: "additional-skills__slider",
+    slidesPerView: "auto",
+    slidesOffsetBefore: 45,
+    slidesOffsetAfter: 45,
+  });
+}
