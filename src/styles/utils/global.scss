@@ -1,4 +1,4 @@
-@import '../mixins/media.scss';
+@import "../mixins/media.scss";
 
 *,
 *::before,
@@ -22,16 +22,12 @@ body {
   min-width: 320px;
 }
 
-
 h1,
 h2,
 h3,
 h4 {
   margin: 0;
 }
-
-
-
 
 h1 {
   font-family: "Muller", sans-serif;
@@ -57,7 +53,7 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  font-family: 'Muller', sans-serif;
+  font-family: "Muller", sans-serif;
   line-height: 1;
   font-size: 1rem;
 }
@@ -78,7 +74,6 @@ a {
   margin: 0 auto;
 }
 
-
 .Typewriter__wrapper {
   display: flex;
   flex-direction: column;
@@ -91,16 +86,25 @@ a {
 
 @include media-tablet {
   .container {
-    padding:0 45px;
+    padding: 0 45px;
   }
 
-  .Typewriter__wrapper  {
+  .Typewriter__wrapper {
     min-height: 5.8125em;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    margin-bottom: 2.2em;
   }
 }
 
 @include media-mobile {
   .container {
     padding: 0 29px;
+  }
+
+  h2 {
+    margin-bottom: 1.65em;
   }
 }

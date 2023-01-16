@@ -6,15 +6,22 @@ import "aos/dist/aos.css";
 // import Typewriter from "typewriter-effect/dist/core";
 
 // eslint-disable-next-line no-unused-vars
-const swiper = new Swiper(".swiper", {
+const educationSwiper = new Swiper(".swiper", {
   speed: 400,
   spaceBetween: 38,
   slidesPerView: "auto",
-  // centeredSlides: true,
-  // loop: true,
   slidesOffsetBefore: 102,
   slidesOffsetAfter: 20,
 });
+
+if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+  educationSwiper.params.slidesOffsetBefore = 46;
+  educationSwiper.update();
+} else if (window.innerWidth <= 768) {
+  educationSwiper.params.slidesOffsetBefore = 29;
+  educationSwiper.params.spaceBetween = 11;
+  educationSwiper.update();
+}
 
 const portfolio = document.querySelector(`.portfolio`);
 const portfolioCards = portfolio.querySelectorAll(`.project-card`);
