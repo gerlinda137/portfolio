@@ -1,5 +1,6 @@
-import Swiper from "swiper";
+import Swiper, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
+import "swiper/css/pagination";
 import "normalize.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -121,7 +122,7 @@ typewriter
 // window.onload = () => {
 if (window.innerWidth > 1024) {
   hidePortfolioCards();
-} else if (window.innerWidth <= 1024) {
+} else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
   showMoreBtn.classList.add("hidden");
 
   // eslint-disable-next-line no-unused-vars
@@ -133,6 +134,23 @@ if (window.innerWidth > 1024) {
     slidesPerView: "auto",
     slidesOffsetBefore: 45,
     slidesOffsetAfter: 45,
+  });
+} else {
+  showMoreBtn.classList.add("hidden");
+
+  // eslint-disable-next-line no-unused-vars
+  const swiper2 = new Swiper(".gallery", {
+    modules: Pagination,
+    speed: 400,
+    spaceBetween: 11,
+    wrapperClass: "gallery__inner",
+    slideClass: "project-card",
+    slidesPerView: "auto",
+    slidesOffsetBefore: 29,
+    slidesOffsetAfter: 29,
+    pagination: {
+      el: ".swiper-pagination",
+    },
   });
 }
 // };

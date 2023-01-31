@@ -63,7 +63,6 @@
     display: flex;
     padding: 1.3em;
   }
-
 }
 
 .top.container {
@@ -80,35 +79,34 @@
       width: 100%;
       flex-shrink: 0;
     }
-    
+
     &__txt h1 {
       margin-bottom: 0.54em;
       font-size: 1.875rem;
     }
-    
+
     &__txt p {
       font-size: 1rem;
       margin-bottom: 1em;
     }
-    
+
     &__txt p:last-of-type {
       margin-bottom: 2.8125em;
     }
-    
+
     &__button {
       font-size: 1rem;
       padding: 1.0625em 6.625em;
 
       &::before {
-      width: 32px;
-      height: 32px;
+        width: 32px;
+        height: 32px;
       }
     }
-    
   }
 
   .top.container {
-    padding-right: 45px ;
+    padding-right: 45px;
   }
 }
 
@@ -127,6 +125,7 @@
 
     &.container {
       padding-right: 29px;
+      margin-bottom: 4.5625em;
     }
   }
 }

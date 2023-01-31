@@ -18,3 +18,11 @@
     }
   }
 }
+
+@include media-mobile {
+  .skills {
+    &.container {
+      margin-bottom: 4.5625em;
+    }
+  }
+}

@@ -73,6 +73,12 @@
     min-width: 317px;
     width: 100%;
     flex-shrink: 0;
+
+    &__buttons {
+      .button {
+        padding: 0.75em 0;
+      }
+    }
   }
 }
 
@@ -99,10 +105,14 @@
     }
 
     &__buttons {
-      button {
+      .button {
         max-width: 10.5em;
         font-size: 0.75rem;
-        padding: 0.75em 0;
+        padding: 1em 0;
+      }
+
+      .button:not(:last-of-type) {
+        margin-right: 0.75em;
       }
     }
   }
