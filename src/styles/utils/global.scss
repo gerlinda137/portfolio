@@ -84,6 +84,24 @@ a {
   display: none;
 }
 
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet {
+  width: 9px !important;
+  height: 9px !important;
+  background-color: #d3e7f9 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #7798ce !important;
+}
+
 @include media-tablet {
   .container {
     padding: 0 45px;

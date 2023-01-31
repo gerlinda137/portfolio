@@ -1,6 +1,6 @@
 import Swiper, { Pagination } from "swiper";
 import "swiper/swiper-bundle.css";
-import "swiper/css/pagination";
+// import "swiper/swiper.min.css";
 import "normalize.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -140,7 +140,7 @@ if (window.innerWidth > 1024) {
 
   // eslint-disable-next-line no-unused-vars
   const swiper2 = new Swiper(".gallery", {
-    modules: Pagination,
+    modules: [Pagination],
     speed: 400,
     spaceBetween: 11,
     wrapperClass: "gallery__inner",
@@ -150,6 +150,7 @@ if (window.innerWidth > 1024) {
     slidesOffsetAfter: 29,
     pagination: {
       el: ".swiper-pagination",
+      type: "bullets",
     },
   });
 }
