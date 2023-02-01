@@ -20,6 +20,7 @@ body {
   background-color: var(--bg);
   color: var(--txt);
   min-width: 320px;
+  transition: background-color 0.2s linear;
 }
 
 h1,
@@ -65,6 +66,13 @@ img {
 a {
   text-decoration: none;
   cursor: pointer;
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
 }
 
 .container {

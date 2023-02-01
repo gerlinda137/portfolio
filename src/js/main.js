@@ -6,6 +6,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 // import Typewriter from "typewriter-effect/dist/core";
 
+window.onload = () => {
+  document.querySelector("body").classList.remove("preload");
+};
+
 // eslint-disable-next-line no-unused-vars
 const educationSwiper = new Swiper(".swiper", {
   speed: 400,
@@ -279,3 +283,67 @@ window.addEventListener("resize", () => {
   transformSkillsToTablet();
   transformSkillsToMobile();
 });
+
+// checkbox accessibility
+const switcherLabel = document.querySelector(".theme-switcher__label");
+const switcherCheckbox = document.querySelector(".theme-switcher__checkbox");
+
+switcherLabel.onkeydown = () => {
+  switcherCheckbox.checked = !switcherCheckbox.checked;
+};
+
+// dark theme
+const root = document.documentElement;
+// checking local storage and if no matching - checking mediaqueries
+
+const storageKey = "theme-preference";
+let storagedTheme = null;
+// eslint-disable-next-line no-undef
+if (localStorage.getItem(storageKey)) {
+  // eslint-disable-next-line no-undef
+  storagedTheme = localStorage.getItem(storageKey);
+}
+
+if (storagedTheme !== null) {
+  if (storagedTheme === "dark") {
+    root.setAttribute("dark", true);
+  } else if (storagedTheme === "light") {
+    root.removeAttribute("dark");
+  }
+} else {
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    root.setAttribute("dark", true);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (root.hasAttribute("dark")) {
+    switcherCheckbox.checked = true;
+  } else {
+    switcherCheckbox.checked = false;
+  }
+
+  switcherLabel.addEventListener("click", () => {
+    toggleTheme();
+    const isDark = root.hasAttribute("dark");
+    // eslint-disable-next-line no-undef
+    localStorage.setItem("theme-preference", isDark ? "dark" : "light");
+  });
+});
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", () => {
+    toggleTheme();
+  });
+
+function toggleTheme() {
+  switcherLabel.classList.toggle("theme-switcher--dark");
+  if (root.hasAttribute("dark")) {
+    root.removeAttribute("dark");
+  } else {
+    root.setAttribute("dark", true);
+  }
+}
+
+// remove transition on load

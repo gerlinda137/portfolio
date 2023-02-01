@@ -13,4 +13,20 @@ $mediaWidthLaptop: 1366px;
   --table-bg: #ffffff;
   --contrast-txt: #ffffff;
   --idle-button: #ffffff;
+  --theme-switcher-bg: #ebebeb;
+}
+
+html[dark] {
+  --bg: #303030;
+  --txt: #ffffff;
+  --theme-switcher-bg: #1f1f1f;
+  //   --primery-accent-color: #7798ce;
+  //   --second-accent-color: #79c1be;
+  //   --footer-bg: #7d7fa1;
+  //   --table-bg: #ffffff;
+  //   --contrast-txt: #ffffff;
+  //   --idle-button: #ffffff;
+  //   --theme-switcher-bg: #ebebeb;
+  // }
+  // переделать переменные цсс исходия из функции, а не цвета
 }
