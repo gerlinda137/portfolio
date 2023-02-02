@@ -29,7 +29,7 @@
     top: 6px;
     left: 5.93px;
     border-radius: 50%;
-    transition: transform 0.2s linear;
+    transition: transform var(--transition) linear;
   }
 
   /*  target the elemenent after the label*/
