@@ -5,28 +5,60 @@ $mediaWidthTabletHorizontal: 1024px;
 $mediaWidthLaptop: 1366px;
 
 :root {
+  --transition: 0s;
   --bg: #ffffff;
   --txt: #464646;
-  --primery-accent-color: #7798ce;
-  --second-accent-color: #79c1be;
+  --top-btn-bg: #79c1be;
+  --top-btn-bg-hover: #7798ce;
+  --cards-bg-color: #7798ce;
+  --cards-bg-hover: #79c1be;
+  --card-btn-bg: #ffffff;
+  --card-btn-bg-hover: #79c1be;
   --footer-bg: #7d7fa1;
   --table-bg: #ffffff;
   --contrast-txt: #ffffff;
   --idle-button: #ffffff;
   --theme-switcher-bg: #ebebeb;
+  --table-svg-color: #7798ce;
+  --table-el-hover-bg: #7798ce;
+  --table-border-color: #d3e7f9;
+  --table-sidebar-bg: #79c1be;
+  --table-top-bg: #ffffff;
+  --table-top-txt-color: #45465a;
+  --table-active-tab: #7798ce;
+  --logo-bg: #79c1be;
+  --menu-hover-color: #7798ce;
+  --tabs-border-color: #d3e7f9;
+  --tabs-mobile-bg: transparent;
+  --tabs-mobile-txt-color: #45465a;
+  --show-more-txt: #464646;
+  --mobile-menu-bg: #ffffff;
+  --pagination-bg: #d3e7f9;
+  --pagination-active-bg: #7798ce;
 }
 
 html[dark] {
   --bg: #303030;
   --txt: #ffffff;
+  --top-btn-bg: #42a3f6;
+  --top-btn-bg-hover: #45465a;
   --theme-switcher-bg: #1f1f1f;
-  //   --primery-accent-color: #7798ce;
-  //   --second-accent-color: #79c1be;
-  //   --footer-bg: #7d7fa1;
-  //   --table-bg: #ffffff;
-  //   --contrast-txt: #ffffff;
-  //   --idle-button: #ffffff;
-  //   --theme-switcher-bg: #ebebeb;
-  // }
-  // переделать переменные цсс исходия из функции, а не цвета
+  --cards-bg-color: #464646;
+  --cards-bg-hover: #42a3f6;
+  --card-btn-bg: #42a3f6;
+  --card-btn-bg-hover: #45465a;
+  --footer-bg: #201618;
+  --table-svg-color: #42a3f6;
+  --table-bg: #45465a;
+  --table-el-hover-bg: #42a3f6;
+  --table-border-color: rgba(211, 231, 249, 0.2);
+  --table-sidebar-bg: #464646;
+  --table-active-tab: #42a3f6;
+  --logo-bg: #ffffff;
+  --menu-hover-color: #42a3f6;
+  --tabs-border-color: transparent;
+  --tabs-mobile-bg: #ffffff;
+  --mobile-menu-bg: #464646;
+  --pagination-bg: #ffffff;
+  --pagination-active-bg: #42a3f6;
 }

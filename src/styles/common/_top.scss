@@ -27,7 +27,7 @@
 
   &__button {
     border-radius: 36px;
-    background-color: var(--second-accent-color);
+    background-color: var(--top-btn-bg);
     color: var(--contrast-txt);
     font-weight: 400;
     font-size: 1.5rem;
@@ -50,7 +50,7 @@
     }
 
     &:hover {
-      background-color: var(--primery-accent-color);
+      background-color: var(--top-btn-bg-hover);
     }
   }
 

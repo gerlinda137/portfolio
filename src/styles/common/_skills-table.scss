@@ -12,6 +12,9 @@
     align-items: center;
     padding-top: 1.4375em;
     padding-bottom: 1.3753em;
+    background-color: var(--table-top-bg);
+    color: var(--table-top-txt-color);
+    border-radius: 1.25em 1.25em 0 0;
 
     span {
       text-align: center;

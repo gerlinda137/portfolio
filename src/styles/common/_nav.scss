@@ -20,19 +20,19 @@
 
   &__list-item a:hover {
     transition: 0.3s;
-    color: var(--primery-accent-color);
+    color: var(--menu-hover-color);
   }
 
-  &--footer{
+  &--footer {
     .nav__list-item a {
       color: var(--contrast-txt);
       font-weight: 300;
       transition: 0.3s;
     }
-  
+
     .nav__list-item a:hover {
       transition: 0.3s;
-      color: var(--second-accent-color);
+      color: var(--menu-hover-color);
     }
   }
 }
@@ -55,7 +55,6 @@
   }
 }
 
-
 @include media-mobile {
   .nav {
     &--footer {
@@ -67,7 +66,7 @@
       .nav__list-item:not(:last-child) {
         margin-right: 0;
       }
-      
+
       .nav__list {
         justify-content: space-between;
         width: 100%;
@@ -75,4 +74,3 @@
     }
   }
 }
-

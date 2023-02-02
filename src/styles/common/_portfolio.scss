@@ -5,7 +5,7 @@
   padding-top: 1em;
 
   &__show-more {
-    color: var(--txt);
+    color: var(--show-more-txt);
     background-color: var(--idle-button);
     text-align: center;
     padding: 1em 0.3em;
@@ -23,7 +23,7 @@
 
   &__show-more:hover {
     color: var(--contrast-txt);
-    background-color: var(--second-accent-color);
+    background-color: var(--card-btn-bg-hover);
     transition: 0.3s;
   }
 }

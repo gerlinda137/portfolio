@@ -20,7 +20,7 @@ body {
   background-color: var(--bg);
   color: var(--txt);
   min-width: 320px;
-  transition: background-color 0.2s linear;
+  transition: var(--transition);
 }
 
 h1,
@@ -68,13 +68,6 @@ a {
   cursor: pointer;
 }
 
-.preload * {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -ms-transition: none !important;
-  -o-transition: none !important;
-}
-
 .container {
   max-width: 1235px;
   width: 100%;
@@ -102,12 +95,12 @@ a {
 .swiper-pagination-bullet {
   width: 9px !important;
   height: 9px !important;
-  background-color: #d3e7f9 !important;
+  background-color: var(--pagination-bg) !important;
   opacity: 1 !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #7798ce !important;
+  background: var(--pagination-active-bg) !important;
 }
 
 @include media-tablet {

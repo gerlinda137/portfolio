@@ -4,7 +4,7 @@
   list-style: none;
   padding-left: 0;
   margin: 0;
-  background-color: var(--second-accent-color);
+  background-color: var(--table-sidebar-bg);
   width: 100%;
   border-bottom-left-radius: 1.25em;
   max-width: -webkit-fit-content;
@@ -34,7 +34,7 @@
   }
 
   &__item.active {
-    background-color: var(--primery-accent-color);
+    background-color: var(--table-active-tab);
   }
 }
 
@@ -50,7 +50,8 @@
     &__item {
       padding: 0.625em 1.375em;
       border-radius: 1.0625em;
-      border: 1px solid var(--primery-accent-color);
+      border: 1px solid var(--tabs-border-color);
+      background-color: var(--tabs-mobile-bg);
 
       &:not(:last-child) {
         margin-right: 1em;
@@ -60,11 +61,16 @@
         color: var(--txt);
         font-size: 1rem;
         max-width: unset;
+        color: var(--tabs-mobile-txt-color);
 
         svg {
           display: none;
         }
       }
+    }
+
+    &__item.active {
+      border: none;
     }
 
     &__item.active button {

@@ -15,7 +15,7 @@
   }
 
   &__item a:hover .socials__item-path {
-    fill: var(--primery-accent-color);
+    fill: var(--menu-hover-color);
   }
 
   &--footer {
@@ -23,13 +23,12 @@
       fill: var(--contrast-txt);
       transition: 0.3s;
     }
-  
+
     .socials__item a:hover .socials__item-path {
-      fill: var(--second-accent-color);
+      fill: var(--menu-hover-color);
     }
   }
 }
-
 
 @include media-mobile {
   .socials {

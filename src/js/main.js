@@ -347,3 +347,7 @@ function toggleTheme() {
 }
 
 // remove transition on load
+
+window.addEventListener("DOMContentLoaded", () => {
+  document.body.style.setProperty("--transition", "0.2s");
+});

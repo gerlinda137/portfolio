@@ -16,7 +16,7 @@
     flex-direction: column;
     padding: 2em 2.25em;
     border-radius: 1.25em;
-    background-color: var(--primery-accent-color);
+    background-color: var(--cards-bg-color);
     max-width: 375px;
     box-sizing: border-box;
     width: 100%;
@@ -34,7 +34,7 @@
   }
 
   &__card:hover {
-    background-color: var(--second-accent-color);
+    background-color: var(--cards-bg-hover);
     transition: 0.3s;
   }
 

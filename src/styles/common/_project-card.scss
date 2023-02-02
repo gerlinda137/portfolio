@@ -1,5 +1,5 @@
 .project-card {
-  background-color: var(--primery-accent-color);
+  background-color: var(--cards-bg-color);
   padding: 2em 2.375em;
   border-radius: 1.25em;
   // display: grid;
@@ -39,7 +39,7 @@
     align-items: center;
 
     .button {
-      background-color: var(--idle-button);
+      background-color: var(--card-btn-bg);
       max-width: 12.5em;
       width: 100%;
       font-weight: 500;
@@ -56,7 +56,7 @@
     }
 
     .button:hover {
-      background-color: var(--second-accent-color);
+      background-color: var(--card-btn-bg-hover);
       color: var(--contrast-txt);
       transition: 0.3s;
     }

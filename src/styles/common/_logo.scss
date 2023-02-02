@@ -2,19 +2,16 @@
   margin-right: 5em;
 
   &--header .logo__img-path {
-    fill: var(--second-accent-color);
+    fill: var(--logo-bg);
   }
 
   &--footer .logo__img-path {
     fill: var(--contrast-txt);
   }
-
 }
-
 
 @include media-tablet {
   .logo {
-
     &--header {
       margin-right: 0;
       position: absolute;
@@ -27,7 +24,6 @@
       margin-right: 0;
       margin-bottom: 3.625em;
     }
-    
   }
 }
 
@@ -39,4 +35,3 @@
     }
   }
 }
-  

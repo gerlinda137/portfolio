@@ -10,7 +10,7 @@
 
   a:hover {
     transition: 0.3s;
-    color: var(--primery-accent-color);
+    color: var(--menu-hover-color);
   }
 
   &--footer {
@@ -20,7 +20,7 @@
     }
 
     a:hover {
-      color: var(--second-accent-color);
+      color: var(--menu-hover-color);
     }
   }
 
@@ -50,4 +50,3 @@
     }
   }
 }
-
