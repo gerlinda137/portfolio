@@ -6,6 +6,7 @@ const styles = require("./gulp/tasks/styles");
 const script = require("./gulp/tasks/script");
 const fonts = require("./gulp/tasks/fonts");
 const imageMinify = require("./gulp/tasks/imageMinify");
+const buildSvg = require("./gulp/tasks/svgSprites");
 const clean = require("./gulp/tasks/clean");
 
 function setProductionMode(isProduction = false) {
@@ -15,7 +16,7 @@ function setProductionMode(isProduction = false) {
   };
 }
 
-const dev = gulp.parallel(html, styles, script, fonts, imageMinify);
+const dev = gulp.parallel(html, styles, script, fonts, imageMinify, buildSvg);
 
 const build = gulp.series(clean, dev);
 
