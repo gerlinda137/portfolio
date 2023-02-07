@@ -288,8 +288,10 @@ window.addEventListener("resize", () => {
 const switcherLabel = document.querySelector(".theme-switcher__label");
 const switcherCheckbox = document.querySelector(".theme-switcher__checkbox");
 
-switcherLabel.onkeydown = () => {
-  switcherCheckbox.checked = !switcherCheckbox.checked;
+switcherLabel.onkeydown = (event) => {
+  if (event.keyCode === 13) {
+    switcherLabel.click();
+  }
 };
 
 // dark theme
