@@ -35,3 +35,12 @@
     font-weight: 500;
   }
 }
+
+@include media-mobile {
+  .experience-card {
+    padding-top: 1.0625em;
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 1.8125em;
+  }
+}

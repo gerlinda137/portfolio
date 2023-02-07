@@ -285,8 +285,11 @@ window.addEventListener("resize", () => {
 });
 
 // checkbox accessibility
-const switcherLabel = document.querySelector(".theme-switcher__label");
-const switcherCheckbox = document.querySelector(".theme-switcher__checkbox");
+const themeSwitcher = document.querySelector(".theme-switcher");
+const switcherLabel = themeSwitcher.querySelector(".theme-switcher__label");
+const switcherCheckbox = themeSwitcher.querySelector(
+  ".theme-switcher__checkbox"
+);
 
 switcherLabel.onkeydown = (event) => {
   if (event.keyCode === 13) {
@@ -347,6 +350,17 @@ function toggleTheme() {
     root.setAttribute("dark", true);
   }
 }
+
+// theme switcher in tab and mobile
+function themeSwitcherToMobile() {
+  if (window.innerWidth <= 1024) {
+    themeSwitcher.remove();
+    headerInner.append(themeSwitcher);
+  }
+}
+
+themeSwitcherToMobile();
+window.addEventListener("resize", themeSwitcherToMobile);
 
 // remove transition on load
 

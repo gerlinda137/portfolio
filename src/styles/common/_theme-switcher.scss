@@ -1,6 +1,11 @@
 .theme-switcher {
   display: flex;
   justify-content: flex-end;
+  margin-bottom: 3.5em;
+
+  &--menu {
+    display: none;
+  }
 
   &__checkbox {
     opacity: 0;
@@ -32,12 +37,19 @@
     transition: transform var(--transition) linear;
   }
 
-  /*  target the elemenent after the label*/
   &__checkbox:checked + .theme-switcher__label .theme-switcher__ball {
     transform: translateX(40px);
   }
+}
 
-  //   &__checkbox:checked + .theme-switcher__label {
+@include media-tablet {
+  .theme-switcher {
+    display: none;
+    justify-content: flex-start;
+    padding: 0;
 
-  //   }
+    &.container {
+      margin: 0;
+    }
+  }
 }
