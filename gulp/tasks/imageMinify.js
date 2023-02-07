@@ -3,7 +3,7 @@ const imagemin = require("gulp-imagemin");
 
 module.exports = function imageMinify() {
   return gulp
-    .src("src/img/**/*.{gif,png,jpg,svg,webp}")
+    .src("src/img/**/*.{gif,png,jpg,webp,svg}")
     .pipe(
       imagemin([
         imagemin.gifsicle({ interlaced: true }),
