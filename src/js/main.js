@@ -91,13 +91,32 @@ for (let j = 0; j < tabs.length; j++) {
 }
 
 // burger
-
 const burger = document.querySelector(".burger");
 const headerInner = document.querySelector(".main-header__inner");
+const navLinks = headerInner.querySelectorAll(".nav__list-item a");
 
 burger.addEventListener("click", () => {
   headerInner.classList.toggle("open");
 });
+
+// closing menu automaticly
+function closeMenu() {
+  headerInner.classList.remove("open");
+}
+
+if (window.innerWidth <= 1024) {
+  for (const link of navLinks) {
+    link.addEventListener("click", () => {
+      setTimeout(closeMenu, 300);
+    });
+  }
+
+  window.onclick = function (event) {
+    if (event.target !== headerInner && event.target !== burger) {
+      closeMenu();
+    }
+  };
+}
 
 // reveal
 // eslint-disable-next-line no-undef
