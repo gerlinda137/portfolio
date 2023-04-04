@@ -7,7 +7,11 @@
     <meta property="og:title" content="Angelina Baranova" />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/preview.png" />
-    <meta property="og:url" content="#" />
+    <meta property="og:description" content="Front-end developer" />
+    <meta
+      property="og:url"
+      content="https://gerlinda137.github.io/portfolio/"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Gulp-template</title>
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -248,7 +252,7 @@
           data-wow-delay="5s"
         >
           <img
-            width="428"
+            width="427"
             src="img/profile.png"
             alt="My photo"
             srcset="img/profile.png 1x, img/profile@2x.png 2x"
@@ -955,6 +959,76 @@
           <div class="gallery__inner">
             <article data-aos="fade-up" class="project-card">
               <img
+                srcset="img/p5.webp"
+                width="505"
+                src="img/p5.jpeg"
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">
+                  Web-приложение канбан доски с авторизацией и хранением данных
+                  в firebase
+                </h3>
+                <p class="project-card__description">
+                  Комплексное приложение на ванильном js (архитектурно
+                  попыталась реализовать через концепцию model view controller).
+                  Регистрация и вход/выход реализованы с помощью firebase. После
+                  создания юзера получаем канбан доску (драг энд дроп по
+                  колонкам в зависимости от состояния задачи) с возможностью
+                  добавления, изменения и удаления задач, а так же треккинга
+                  времени на каждую задачу. Все данные сохраняются в базе данных
+                  c помощью firebase. Присутствует функционал изменения темы со
+                  светлой на темную (предпочтение пользователя запоминаются).
+                  Адаптив реализован только с помощью верстки (доска
+                  превращается в слайдер), однако функционал в дальнейшем под
+                  мобильную версию должен быть переделан из-за специфики
+                  тач-событий (слайдер конфликтит с драг-н-дропом).
+                </p>
+                <div class="project-card__buttons">
+                  <a class="button" href="https://gerlinda137.github.io/todo/"
+                    >Сайт</a
+                  ><a class="button" href="https://github.com/gerlinda137/todo"
+                    >Репозиторий</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article data-aos="fade-up" class="project-card">
+              <img
+                srcset="img/p6.webp"
+                width="505"
+                src="img/p6.jpeg"
+                alt="Project preview"
+              />
+              <div class="project-card__txt">
+                <h3 class="project-card__title">
+                  Web-приложение для прогноза погоды
+                </h3>
+                <p class="project-card__description">
+                  Приложение написано на чистом javascript. После загрузки
+                  страницы у пользователя запрашивается разрешение на
+                  определение геолокации, после чего с помощью api сервиса
+                  обратного геокодинга прописывается название текущего
+                  населенного пункта. После чего с помощью api погодного сервиса
+                  показывается текущая погода, а также прогноз на ближайшие 7
+                  дней. Реализовано изменение фона приложения в соответствии с
+                  погодными условиями и временем суток.
+                </p>
+                <div class="project-card__buttons">
+                  <a
+                    class="button"
+                    href="https://gerlinda137.github.io/weather-forecast/"
+                    >Сайт</a
+                  ><a
+                    class="button"
+                    href="https://github.com/gerlinda137/weather-forecast"
+                    >Репозиторий</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article data-aos="fade-up" class="project-card">
+              <img
                 srcset="img/p1.jpg 1x, img/p1@2x.jpg 2x"
                 width="505"
                 src="img/p1.jpg"
@@ -1036,67 +1110,6 @@
                 <div class="project-card__buttons">
                   <a class="button" href="#">Сайт</a>
                   <a class="button" href="#">Репозиторий</a>
-                </div>
-              </div>
-            </article>
-            <article data-aos="fade-up" class="project-card">
-              <img
-                srcset="img/p3.jpg 1x, img/p3@2x.jpg 2x"
-                width="505"
-                src=""
-                alt="Project preview"
-              />
-              <div class="project-card__txt">
-                <h3 class="project-card__title">Лендинг мебельной компании</h3>
-                <p class="project-card__description">
-                  Семантическая верстка главной страницы и каталога товаров на
-                  чистом html/css. Реализовано открытие / закрытие попапа и
-                  функционал слайдера на главной странице на js.
-                </p>
-                <div class="project-card__buttons">
-                  <a class="button" href="#">Сайт</a
-                  ><a class="button" href="#">Репозиторий</a>
-                </div>
-              </div>
-            </article>
-
-            <article data-aos="fade-up" class="project-card">
-              <img
-                srcset="img/p2.jpg 1x, img/p2@2x.jpg 2x"
-                width="505"
-                src=""
-                alt="Project preview"
-              />
-              <div class="project-card__txt">
-                <h3 class="project-card__title">Лендинг мебельной компании</h3>
-                <p class="project-card__description">
-                  Семантическая верстка главной страницы и каталога товаров на
-                  чистом html/css. Реализовано открытие / закрытие попапа и
-                  функционал слайдера на главной странице на js.
-                </p>
-                <div class="project-card__buttons">
-                  <a class="button" href="#">Сайт</a
-                  ><a class="button" href="#">Репозиторий</a>
-                </div>
-              </div>
-            </article>
-            <article data-aos="fade-up" class="project-card">
-              <img
-                srcset="img/p1.jpg 1x, img/p2@2x.jpg 2x"
-                width="505"
-                src=""
-                alt="Project preview"
-              />
-              <div class="project-card__txt">
-                <h3 class="project-card__title">Лендинг мебельной компании</h3>
-                <p class="project-card__description">
-                  Семантическая верстка главной страницы и каталога товаров на
-                  чистом html/css. Реализовано открытие / закрытие попапа и
-                  функционал слайдера на главной странице на js.
-                </p>
-                <div class="project-card__buttons">
-                  <a class="button" href="#">Сайт</a
-                  ><a class="button" href="#">Репозиторий</a>
                 </div>
               </div>
             </article>
